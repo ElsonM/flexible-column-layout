@@ -1,5 +1,5 @@
-# flexible-column-layout
-SAP UI5 Freestyle (Flignt Model
-1 - Fullscreen Navigation App. (fullscreennav)
-2 - Split screen App. (splitapp)
-3 - Flexible Colum Layout (fcl)
+# sap-ui5-freestylw
+SAP UI5 Freestyle (Flight Model)
+• Fullscreen Navigation App. (fullscreennav)
+• Split screen App. (splitapp)
+• Flexible Colum Layout App. (fcl)
