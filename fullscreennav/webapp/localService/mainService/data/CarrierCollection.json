@@ -1,0 +1,23 @@
+[
+  {
+    "carrid": "AA",
+    "CARRNAME": "American Airlines",
+    "CURRCODE": "USD",
+    "URL": "http://www.aa.com",
+    "mimeType": "image/png"
+  },
+  {
+    "carrid": "LH",
+    "CARRNAME": "Lufthansa",
+    "CURRCODE": "EUR",
+    "URL": "http://www.lufthansa.com",
+    "mimeType": "image/png"
+  },
+  {
+    "carrid": "UA",
+    "CARRNAME": "United Airlines",
+    "CURRCODE": "USD",
+    "URL": "http://www.united.com",
+    "mimeType": "image/png"
+  }
+]

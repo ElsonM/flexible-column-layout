@@ -1,0 +1,11 @@
+.compactAirportInfo {
+    gap: 0;
+}
+
+.compactAirportInfo .sapMText {
+    line-height: 1.25rem;
+}
+
+.compactAirportInfo .airportCodeText {
+    font-weight: 700;
+}

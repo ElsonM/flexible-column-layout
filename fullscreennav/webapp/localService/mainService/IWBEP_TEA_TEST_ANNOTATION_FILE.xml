@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0"
+xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+
+
+<edmx:Reference Uri="../Annotations(TechnicalName='%2FIWBEP%2FTEA_TEST_ANNOTATION_FILE',Version='0001')/$value"/>
+<edmx:Reference Uri="$metadata">
+    <edmx:Include Namespace="RMTSAMPLEFLIGHT"/>
+</edmx:Reference>
+<edmx:Reference Uri="../../../iwfnd/rmtsampleflight/$metadata"/>
+<edmx:Reference Uri="../../../iwbep/tea_test_application/$metadata"/>
+<edmx:DataServices>
+    <Schema Namespace="com.sap.iwbep.tea_test_annotation_file.v1"
+    xmlns="http://docs.oasis-open.org/odata/ns/edm">
+</Schema>
+</edmx:DataServices>
+</edmx:Edmx>

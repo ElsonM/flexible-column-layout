@@ -1,0 +1,78 @@
+<mvc:View xmlns:semantic="sap.f.semantic" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:uxap="sap.uxap" xmlns="sap.m" controllerName="at.clouddna.fcl.controller.FlightDetails" displayBlock="true">
+    <uxap:ObjectPageLayout id="flightObjectPageLayout">
+        <uxap:headerTitle>
+            <uxap:ObjectPageDynamicHeaderTitle id="flightDynamicHeaderTitle">
+                <uxap:expandedHeading>
+                    <Title id="flightTitle" text="{connid}" wrapping="true" class="sapUiSmallMarginEnd"/>
+                </uxap:expandedHeading>
+                <uxap:navigationActions>
+                    <OverflowToolbarButton type="Transparent" icon="sap-icon://full-screen" press="handleFullScreen" id="flightEnterFullScreenBtn" tooltip="Enter Full Screen Mode" visible="{= ${ui>/actionButtonsInfo/endColumn/fullScreen} !== null }"/>
+                    <OverflowToolbarButton type="Transparent" icon="sap-icon://exit-full-screen" press="handleExitFullScreen" id="flightExitFullScreenBtn" tooltip="Exit Full Screen Mode" visible="{= ${ui>/actionButtonsInfo/endColumn/exitFullScreen} !== null }"/>
+                    <OverflowToolbarButton id="flightCloseBtn" type="Transparent" icon="sap-icon://decline" press="handleClose" tooltip="Close middle column" visible="{= ${ui>/actionButtonsInfo/endColumn/closeColumn} !== null }"/>
+                </uxap:navigationActions>
+            </uxap:ObjectPageDynamicHeaderTitle>
+        </uxap:headerTitle>
+        <uxap:sections>
+            <uxap:ObjectPageSection id="flightGeneralSection" title="General Information">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection id="flightGeneralSubSection">
+                        <uxap:blocks>
+                            <f:SimpleForm id="flight_simpleform" editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1">
+                                <f:content>
+                                    <Label id="labelConnid" labelFor="textCarrid" text="Connection"/>
+                                    <Text id="textConnid" text="{connid}"/>
+                                    <Label id="labelFldate" labelFor="textFldate" text="Flight date"/>
+                                    <Text id="textFldate" text="{ path: 'fldate', type: 'sap.ui.model.odata.type.Date'}"/>
+                                    <Label id="labelCityFrom" labelFor="objectIdentifierCityFrom" text="Departure"/>
+                                    <VBox id="objectIdentifierCityFrom" renderType="Bare" class="compactAirportInfo">
+                                        <Text id="textAirportFrom" text="{flightDetails/airportFrom}" class="airportCodeText"/>
+                                        <Text id="textCityFrom" text="{ path: 'flightDetails/cityFrom', formatter: '.toUpper'}"/>
+                                    </VBox>
+                                    <Label id="labelCityTo" labelFor="objectIdentifierCityTo" text="Destination"/>
+                                    <VBox id="objectIdentifierCityTo" renderType="Bare" class="compactAirportInfo">
+                                        <Text id="textAirportTo" text="{flightDetails/airportTo}" class="airportCodeText"/>
+                                        <Text id="textCityTo" text="{ path: 'flightDetails/cityTo', formatter: '.toUpper'}"/>
+                                    </VBox>
+                                </f:content>
+                            </f:SimpleForm>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection id="flightBookingsSection" title="Bookings Information">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection id="flightBookingsSubSection">
+                        <uxap:blocks>
+                            <Table id="tableBookings" headerText="Bookings Table" items="{ path: 'flightBookings', sorter: { path: 'ORDER_DATE', descending: true } }" alternateRowColors="true" growing="true" growingThreshold="200">
+                                <columns> 
+                                    <Column id="columnBookid">
+                                        <Label id="columnLabelBookid" text="Booking ID"/>
+                                    </Column>
+                                    <Column id="columnClass">
+                                        <Label id="columnLabelClass" text="Class"/>
+                                    </Column>
+                                    <Column id="columnPass" demandPopin="true" minScreenWidth="Desktop">
+                                        <Label id="columnLabelPass" text="Passenger"/>
+                                    </Column>
+                                    <Column id="columnAmount" demandPopin="true" minScreenWidth="Desktop">
+                                        <Label id="columnLabelAmount" text="Amount"/>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem id="columnListItemBookingTemplate" highlight="{= ${CANCELLED} ? 'Error' : 'Success'}">
+                                        <cells>
+                                            <ObjectIdentifier id="objectIdentifierBookid" title="{bookid}"/>
+                                            <Text id="textClass" text="{CLASS}"/>
+                                            <ObjectIdentifier id="objectIdentifierPass" title="{PASSNAME}" text="{ path: 'PASSBIRTH', type: 'sap.ui.model.odata.type.Date' }"/>
+                                            <ObjectNumber id="objectNumberAmount" number="{FORCURAM}" unit="{FORCURKEY}"/>
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+    </uxap:ObjectPageLayout>
+</mvc:View>

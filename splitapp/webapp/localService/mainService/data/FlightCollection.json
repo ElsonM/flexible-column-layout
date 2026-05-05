@@ -1,0 +1,128 @@
+[
+  {
+    "carrid": "AA", "connid": "0001", "fldate": "/Date(1768435200000)/",
+    "PRICE": "450.00", "CURRENCY": "USD", "PLANETYPE": "747-400",
+    "SEATSMAX": 300, "SEATSOCC": 240, "SEATSMAX_B": 60, "SEATSOCC_B": 45, "SEATSMAX_F": 20, "SEATSOCC_F": 12,
+    "PAYMENTSUM": "108000.00",
+    "flightDetails": { "countryFrom": "US", "cityFrom": "New York",  "airportFrom": "JFK", "countryTo": "US", "cityTo": "Los Angeles", "airportTo": "LAX", "flightTime": 330, "departureTime": "PT14H00M00S", "arrivalTime": "PT17H30M00S", "distance": "2462", "distanceUnit": "SMI", "flightType": " ", "period": 0 }
+  },
+  {
+    "carrid": "AA", "connid": "0002", "fldate": "/Date(1771545600000)/",
+    "PRICE": "780.00", "CURRENCY": "USD", "PLANETYPE": "777-200",
+    "SEATSMAX": 280, "SEATSOCC": 262, "SEATSMAX_B": 48, "SEATSOCC_B": 44, "SEATSMAX_F": 16, "SEATSOCC_F": 15,
+    "PAYMENTSUM": "204360.00",
+    "flightDetails": { "countryFrom": "US", "cityFrom": "New York",  "airportFrom": "JFK", "countryTo": "GB", "cityTo": "London",      "airportTo": "LHR", "flightTime": 420, "departureTime": "PT21H00M00S", "arrivalTime": "PT09H00M00S", "distance": "3459", "distanceUnit": "SMI", "flightType": " ", "period": 1 }
+  },
+  {
+    "carrid": "AB", "connid": "0011", "fldate": "/Date(1768435200000)/",
+    "PRICE": "210.00", "CURRENCY": "EUR", "PLANETYPE": "A320",
+    "SEATSMAX": 180, "SEATSOCC": 158, "SEATSMAX_B": 24, "SEATSOCC_B": 18, "SEATSMAX_F": 0, "SEATSOCC_F": 0,
+    "PAYMENTSUM": "33180.00",
+    "flightDetails": { "countryFrom": "DE", "cityFrom": "Berlin",    "airportFrom": "TXL", "countryTo": "GB", "cityTo": "London",      "airportTo": "LHR", "flightTime": 120, "departureTime": "PT07H30M00S", "arrivalTime": "PT08H30M00S", "distance": "577",  "distanceUnit": "SMI", "flightType": " ", "period": 0 }
+  },
+  {
+    "carrid": "AB", "connid": "0012", "fldate": "/Date(1771545600000)/",
+    "PRICE": "185.00", "CURRENCY": "EUR", "PLANETYPE": "A319",
+    "SEATSMAX": 144, "SEATSOCC": 131, "SEATSMAX_B": 0,  "SEATSOCC_B": 0,  "SEATSMAX_F": 0, "SEATSOCC_F": 0,
+    "PAYMENTSUM": "24235.00",
+    "flightDetails": { "countryFrom": "DE", "cityFrom": "Berlin",    "airportFrom": "TXL", "countryTo": "FR", "cityTo": "Paris",       "airportTo": "CDG", "flightTime": 110, "departureTime": "PT10H00M00S", "arrivalTime": "PT11H50M00S", "distance": "545",  "distanceUnit": "SMI", "flightType": " ", "period": 0 }
+  },
+  {
+    "carrid": "AC", "connid": "0021", "fldate": "/Date(1768435200000)/",
+    "PRICE": "320.00", "CURRENCY": "CAD", "PLANETYPE": "787-9",
+    "SEATSMAX": 296, "SEATSOCC": 271, "SEATSMAX_B": 28, "SEATSOCC_B": 20, "SEATSMAX_F": 0, "SEATSOCC_F": 0,
+    "PAYMENTSUM": "86720.00",
+    "flightDetails": { "countryFrom": "CA", "cityFrom": "Toronto",   "airportFrom": "YYZ", "countryTo": "CA", "cityTo": "Vancouver",   "airportTo": "YVR", "flightTime": 290, "departureTime": "PT08H00M00S", "arrivalTime": "PT10H50M00S", "distance": "2096", "distanceUnit": "SMI", "flightType": " ", "period": 0 }
+  },
+  {
+    "carrid": "AC", "connid": "0022", "fldate": "/Date(1771545600000)/",
+    "PRICE": "620.00", "CURRENCY": "CAD", "PLANETYPE": "777-300ER",
+    "SEATSMAX": 396, "SEATSOCC": 375, "SEATSMAX_B": 40, "SEATSOCC_B": 36, "SEATSMAX_F": 0, "SEATSOCC_F": 0,
+    "PAYMENTSUM": "232500.00",
+    "flightDetails": { "countryFrom": "CA", "cityFrom": "Toronto",   "airportFrom": "YYZ", "countryTo": "GB", "cityTo": "London",      "airportTo": "LHR", "flightTime": 430, "departureTime": "PT18H30M00S", "arrivalTime": "PT07H00M00S", "distance": "3547", "distanceUnit": "SMI", "flightType": " ", "period": 1 }
+  },
+  {
+    "carrid": "AF", "connid": "0031", "fldate": "/Date(1768435200000)/",
+    "PRICE": "890.00", "CURRENCY": "EUR", "PLANETYPE": "A380",
+    "SEATSMAX": 516, "SEATSOCC": 498, "SEATSMAX_B": 80, "SEATSOCC_B": 77, "SEATSMAX_F": 9, "SEATSOCC_F": 9,
+    "PAYMENTSUM": "443220.00",
+    "flightDetails": { "countryFrom": "FR", "cityFrom": "Paris",     "airportFrom": "CDG", "countryTo": "US", "cityTo": "New York",    "airportTo": "JFK", "flightTime": 465, "departureTime": "PT10H30M00S", "arrivalTime": "PT13H15M00S", "distance": "3628", "distanceUnit": "SMI", "flightType": " ", "period": 0 }
+  },
+  {
+    "carrid": "AF", "connid": "0032", "fldate": "/Date(1771545600000)/",
+    "PRICE": "1100.00", "CURRENCY": "EUR", "PLANETYPE": "A350-900",
+    "SEATSMAX": 324, "SEATSOCC": 302, "SEATSMAX_B": 48, "SEATSOCC_B": 42, "SEATSMAX_F": 0, "SEATSOCC_F": 0,
+    "PAYMENTSUM": "332200.00",
+    "flightDetails": { "countryFrom": "FR", "cityFrom": "Paris",     "airportFrom": "CDG", "countryTo": "JP", "cityTo": "Tokyo",       "airportTo": "HND", "flightTime": 720, "departureTime": "PT13H00M00S", "arrivalTime": "PT08H00M00S", "distance": "6033", "distanceUnit": "SMI", "flightType": " ", "period": 1 }
+  },
+  {
+    "carrid": "AZ", "connid": "0041", "fldate": "/Date(1768435200000)/",
+    "PRICE": "750.00", "CURRENCY": "EUR", "PLANETYPE": "777-200ER",
+    "SEATSMAX": 280, "SEATSOCC": 267, "SEATSMAX_B": 36, "SEATSOCC_B": 32, "SEATSMAX_F": 0, "SEATSOCC_F": 0,
+    "PAYMENTSUM": "200250.00",
+    "flightDetails": { "countryFrom": "IT", "cityFrom": "Rome",      "airportFrom": "FCO", "countryTo": "US", "cityTo": "New York",    "airportTo": "JFK", "flightTime": 510, "departureTime": "PT09H00M00S", "arrivalTime": "PT13H30M00S", "distance": "4276", "distanceUnit": "SMI", "flightType": " ", "period": 0 }
+  },
+  {
+    "carrid": "AZ", "connid": "0042", "fldate": "/Date(1771545600000)/",
+    "PRICE": "280.00", "CURRENCY": "EUR", "PLANETYPE": "A321",
+    "SEATSMAX": 200, "SEATSOCC": 183, "SEATSMAX_B": 20, "SEATSOCC_B": 15, "SEATSMAX_F": 0, "SEATSOCC_F": 0,
+    "PAYMENTSUM": "51240.00",
+    "flightDetails": { "countryFrom": "IT", "cityFrom": "Rome",      "airportFrom": "FCO", "countryTo": "GB", "cityTo": "London",      "airportTo": "LHR", "flightTime": 155, "departureTime": "PT12H00M00S", "arrivalTime": "PT14H35M00S", "distance": "895",  "distanceUnit": "SMI", "flightType": " ", "period": 0 }
+  },
+  {
+    "carrid": "BA", "connid": "0051", "fldate": "/Date(1768435200000)/",
+    "PRICE": "820.00", "CURRENCY": "GBP", "PLANETYPE": "747-400",
+    "SEATSMAX": 345, "SEATSOCC": 320, "SEATSMAX_B": 70, "SEATSOCC_B": 62, "SEATSMAX_F": 14, "SEATSOCC_F": 12,
+    "PAYMENTSUM": "262400.00",
+    "flightDetails": { "countryFrom": "GB", "cityFrom": "London",    "airportFrom": "LHR", "countryTo": "US", "cityTo": "New York",    "airportTo": "JFK", "flightTime": 435, "departureTime": "PT11H00M00S", "arrivalTime": "PT14H15M00S", "distance": "3459", "distanceUnit": "SMI", "flightType": " ", "period": 0 }
+  },
+  {
+    "carrid": "BA", "connid": "0052", "fldate": "/Date(1771545600000)/",
+    "PRICE": "1350.00", "CURRENCY": "GBP", "PLANETYPE": "777-300ER",
+    "SEATSMAX": 320, "SEATSOCC": 309, "SEATSMAX_B": 56, "SEATSOCC_B": 52, "SEATSMAX_F": 8, "SEATSOCC_F": 8,
+    "PAYMENTSUM": "417150.00",
+    "flightDetails": { "countryFrom": "GB", "cityFrom": "London",    "airportFrom": "LHR", "countryTo": "SG", "cityTo": "Singapore",   "airportTo": "SIN", "flightTime": 780, "departureTime": "PT22H00M00S", "arrivalTime": "PT17H00M00S", "distance": "6764", "distanceUnit": "SMI", "flightType": " ", "period": 1 }
+  },
+  {
+    "carrid": "CO", "connid": "0061", "fldate": "/Date(1768435200000)/",
+    "PRICE": "380.00", "CURRENCY": "USD", "PLANETYPE": "737-800",
+    "SEATSMAX": 162, "SEATSOCC": 130, "SEATSMAX_B": 16, "SEATSOCC_B": 10, "SEATSMAX_F": 0, "SEATSOCC_F": 0,
+    "PAYMENTSUM": "49400.00",
+    "flightDetails": { "countryFrom": "US", "cityFrom": "Houston",   "airportFrom": "IAH", "countryTo": "US", "cityTo": "New York",    "airportTo": "JFK", "flightTime": 195, "departureTime": "PT06H30M00S", "arrivalTime": "PT11H45M00S", "distance": "1415", "distanceUnit": "SMI", "flightType": " ", "period": 0 }
+  },
+  {
+    "carrid": "CO", "connid": "0062", "fldate": "/Date(1771545600000)/",
+    "PRICE": "690.00", "CURRENCY": "USD", "PLANETYPE": "767-300ER",
+    "SEATSMAX": 218, "SEATSOCC": 204, "SEATSMAX_B": 28, "SEATSOCC_B": 25, "SEATSMAX_F": 0, "SEATSOCC_F": 0,
+    "PAYMENTSUM": "140760.00",
+    "flightDetails": { "countryFrom": "US", "cityFrom": "Houston",   "airportFrom": "IAH", "countryTo": "GB", "cityTo": "London",      "airportTo": "LHR", "flightTime": 555, "departureTime": "PT17H00M00S", "arrivalTime": "PT09H15M00S", "distance": "4836", "distanceUnit": "SMI", "flightType": " ", "period": 1 }
+  },
+  {
+    "carrid": "DL", "connid": "0071", "fldate": "/Date(1768435200000)/",
+    "PRICE": "290.00", "CURRENCY": "USD", "PLANETYPE": "737-900",
+    "SEATSMAX": 180, "SEATSOCC": 161, "SEATSMAX_B": 20, "SEATSOCC_B": 16, "SEATSMAX_F": 0, "SEATSOCC_F": 0,
+    "PAYMENTSUM": "46690.00",
+    "flightDetails": { "countryFrom": "US", "cityFrom": "Atlanta",   "airportFrom": "ATL", "countryTo": "US", "cityTo": "New York",    "airportTo": "JFK", "flightTime": 135, "departureTime": "PT09H00M00S", "arrivalTime": "PT11H15M00S", "distance": "760",  "distanceUnit": "SMI", "flightType": " ", "period": 0 }
+  },
+  {
+    "carrid": "DL", "connid": "0072", "fldate": "/Date(1771545600000)/",
+    "PRICE": "860.00", "CURRENCY": "USD", "PLANETYPE": "A330-300",
+    "SEATSMAX": 293, "SEATSOCC": 278, "SEATSMAX_B": 34, "SEATSOCC_B": 30, "SEATSMAX_F": 0, "SEATSOCC_F": 0,
+    "PAYMENTSUM": "239080.00",
+    "flightDetails": { "countryFrom": "US", "cityFrom": "Atlanta",   "airportFrom": "ATL", "countryTo": "FR", "cityTo": "Paris",       "airportTo": "CDG", "flightTime": 510, "departureTime": "PT16H30M00S", "arrivalTime": "PT08H00M00S", "distance": "4394", "distanceUnit": "SMI", "flightType": " ", "period": 1 }
+  },
+  {
+    "carrid": "FJ", "connid": "0081", "fldate": "/Date(1768435200000)/",
+    "PRICE": "420.00", "CURRENCY": "FJD", "PLANETYPE": "A330-200",
+    "SEATSMAX": 274, "SEATSOCC": 248, "SEATSMAX_B": 28, "SEATSOCC_B": 22, "SEATSMAX_F": 0, "SEATSOCC_F": 0,
+    "PAYMENTSUM": "104160.00",
+    "flightDetails": { "countryFrom": "FJ", "cityFrom": "Nadi",      "airportFrom": "NAN", "countryTo": "AU", "cityTo": "Sydney",      "airportTo": "SYD", "flightTime": 240, "departureTime": "PT08H00M00S", "arrivalTime": "PT10H00M00S", "distance": "1986", "distanceUnit": "SMI", "flightType": " ", "period": 0 }
+  },
+  {
+    "carrid": "FJ", "connid": "0082", "fldate": "/Date(1771545600000)/",
+    "PRICE": "1250.00", "CURRENCY": "FJD", "PLANETYPE": "A350-900",
+    "SEATSMAX": 324, "SEATSOCC": 315, "SEATSMAX_B": 36, "SEATSOCC_B": 34, "SEATSMAX_F": 0, "SEATSOCC_F": 0,
+    "PAYMENTSUM": "393750.00",
+    "flightDetails": { "countryFrom": "FJ", "cityFrom": "Nadi",      "airportFrom": "NAN", "countryTo": "US", "cityTo": "Los Angeles", "airportTo": "LAX", "flightTime": 600, "departureTime": "PT23H00M00S", "arrivalTime": "PT13H00M00S", "distance": "5101", "distanceUnit": "SMI", "flightType": " ", "period": 0 }
+  }
+]

@@ -1,0 +1,11 @@
+[
+  { "carrid": "AA", "CARRNAME": "American Airlines",   "CURRCODE": "USD", "URL": "https://www.aa.com",              "mimeType": "image/png" },
+  { "carrid": "AB", "CARRNAME": "Air Berlin",          "CURRCODE": "EUR", "URL": "https://www.airberlin.com",        "mimeType": "image/png" },
+  { "carrid": "AC", "CARRNAME": "Air Canada",          "CURRCODE": "CAD", "URL": "https://www.aircanada.com",        "mimeType": "image/png" },
+  { "carrid": "AF", "CARRNAME": "Air France",          "CURRCODE": "EUR", "URL": "https://www.airfrance.com",        "mimeType": "image/png" },
+  { "carrid": "AZ", "CARRNAME": "Alitalia",            "CURRCODE": "EUR", "URL": "https://www.alitalia.com",         "mimeType": "image/png" },
+  { "carrid": "BA", "CARRNAME": "British Airways",     "CURRCODE": "GBP", "URL": "https://www.britishairways.com",   "mimeType": "image/png" },
+  { "carrid": "CO", "CARRNAME": "Continental Airlines","CURRCODE": "USD", "URL": "https://www.continental.com",      "mimeType": "image/png" },
+  { "carrid": "DL", "CARRNAME": "Delta Air Lines",     "CURRCODE": "USD", "URL": "https://www.delta.com",            "mimeType": "image/png" },
+  { "carrid": "FJ", "CARRNAME": "Fiji Airways",        "CURRCODE": "FJD", "URL": "https://www.fijiairways.com",      "mimeType": "image/png" }
+]
