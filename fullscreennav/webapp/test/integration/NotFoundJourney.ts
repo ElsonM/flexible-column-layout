@@ -1,47 +1,46 @@
 /*global QUnit*/
 declare const QUnit: any;
 import opaTest from "sap/ui/test/opaQunit";
-import Opa5 from "sap/ui/test/Opa5";
 
 import AppPage from "./pages/AppPage";
 import MainPage from "./pages/MainPage";
-import DetailPage from "./pages/DetailPage";
-
-Opa5.extendConfig({
-	autoWait: true
-});
+import NotFoundPage from "./pages/NotFoundPage";
 
 const onTheAppPage = new AppPage();
 const onTheMainPage = new MainPage();
-const onTheDetailPage = new DetailPage();
+const onTheNotFoundPage = new NotFoundPage();
 
-QUnit.module("Navigation Journey");
+QUnit.module("Not Found Page Journey");
 
-opaTest("Should see the initial Main page of the app", 2, function () {
+opaTest("Should display the Not Found page when navigating to an invalid route", 2, function () {
 	// Arrangements
 	// eslint-disable-next-line @typescript-eslint/no-floating-promises
 	onTheAppPage.iStartMyApp();
 
+	// Actions
+	onTheNotFoundPage.iNavigateToNotFound();
+
 	// Assertions
-	onTheAppPage.iShouldSeeTheApp();
-	onTheMainPage.iShouldSeeTheMainPage();
+	onTheNotFoundPage.iShouldSeeTheNotFoundPage();
+	onTheNotFoundPage.iShouldSeeTheTakeMeBackButton();
 
 	// Cleanup
 	// eslint-disable-next-line @typescript-eslint/no-floating-promises
 	onTheAppPage.iTeardownMyApp();
 });
 
-opaTest("Should navigate to the Detail page when pressing a carrier in the list", 2, function () {
+opaTest("Should navigate back to the Main page when pressing 'Take me back to the list'", 3, function () {
 	// Arrangements
 	// eslint-disable-next-line @typescript-eslint/no-floating-promises
 	onTheAppPage.iStartMyApp();
 
 	// Actions
-	onTheMainPage.iShouldSeeCarriersLoaded();
-	onTheMainPage.iPressOnTheFirstCarrier();
+	onTheNotFoundPage.iNavigateToNotFound();
+	onTheNotFoundPage.iShouldSeeTheNotFoundPage();
+	onTheNotFoundPage.iPressTheTakeMeBackButton();
 
 	// Assertions
-	onTheDetailPage.iShouldSeeTheDetailPage();
+	onTheMainPage.iShouldSeeTheMainPage();
 
 	// Cleanup
 	// eslint-disable-next-line @typescript-eslint/no-floating-promises

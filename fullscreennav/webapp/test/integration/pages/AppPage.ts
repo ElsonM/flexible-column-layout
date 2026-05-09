@@ -1,10 +1,18 @@
 import Opa5 from "sap/ui/test/Opa5";
 
-const sViewName = "App";
+const sViewName = "at.clouddna.fullscreennav.view.App";
 
 export default class AppPage extends Opa5 {
 	// Actions
+	iStartMyApp() {
+		return this.iStartMyUIComponent({
+			componentConfig: { name: "at.clouddna.fullscreennav" }
+		});
+	}
 
+	iTeardownMyApp() {
+		return this.iTeardownMyUIComponent();
+	}
 
 	// Assertions
 	iShouldSeeTheApp() {
@@ -12,11 +20,9 @@ export default class AppPage extends Opa5 {
 			id: "app",
 			viewName: sViewName,
 			success: function () {
-				Opa5.assert.ok(true, "The " + sViewName + " view is displayed");
+				Opa5.assert.ok(true, "The App view is displayed");
 			},
-			errorMessage: "Did not find the " + sViewName + " view"
+			errorMessage: "Did not find the App shell control"
 		});
 	}
-
 }
-

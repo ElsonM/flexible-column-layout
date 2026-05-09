@@ -1,37 +1,18 @@
 /*global QUnit*/
 declare const QUnit: any;
 import opaTest from "sap/ui/test/opaQunit";
-import Opa5 from "sap/ui/test/Opa5";
 
 import AppPage from "./pages/AppPage";
 import MainPage from "./pages/MainPage";
 import DetailPage from "./pages/DetailPage";
 
-Opa5.extendConfig({
-	autoWait: true
-});
-
 const onTheAppPage = new AppPage();
 const onTheMainPage = new MainPage();
 const onTheDetailPage = new DetailPage();
 
-QUnit.module("Navigation Journey");
+QUnit.module("Detail Page Journey");
 
-opaTest("Should see the initial Main page of the app", 2, function () {
-	// Arrangements
-	// eslint-disable-next-line @typescript-eslint/no-floating-promises
-	onTheAppPage.iStartMyApp();
-
-	// Assertions
-	onTheAppPage.iShouldSeeTheApp();
-	onTheMainPage.iShouldSeeTheMainPage();
-
-	// Cleanup
-	// eslint-disable-next-line @typescript-eslint/no-floating-promises
-	onTheAppPage.iTeardownMyApp();
-});
-
-opaTest("Should navigate to the Detail page when pressing a carrier in the list", 2, function () {
+opaTest("Should display carrier details after navigating to a carrier", 5, function () {
 	// Arrangements
 	// eslint-disable-next-line @typescript-eslint/no-floating-promises
 	onTheAppPage.iStartMyApp();
@@ -42,6 +23,26 @@ opaTest("Should navigate to the Detail page when pressing a carrier in the list"
 
 	// Assertions
 	onTheDetailPage.iShouldSeeTheDetailPage();
+	onTheDetailPage.iShouldSeeTheCarrierIdField();
+	onTheDetailPage.iShouldSeeTheCarrierNameField();
+	onTheDetailPage.iShouldSeeTheCurrencyField();
+
+	// Cleanup
+	// eslint-disable-next-line @typescript-eslint/no-floating-promises
+	onTheAppPage.iTeardownMyApp();
+});
+
+opaTest("Should show the Carrier Flights button in the Detail page header", 2, function () {
+	// Arrangements
+	// eslint-disable-next-line @typescript-eslint/no-floating-promises
+	onTheAppPage.iStartMyApp();
+
+	// Actions
+	onTheMainPage.iShouldSeeCarriersLoaded();
+	onTheMainPage.iPressOnTheFirstCarrier();
+
+	// Assertions
+	onTheDetailPage.iShouldSeeTheCarrierFlightsButton();
 
 	// Cleanup
 	// eslint-disable-next-line @typescript-eslint/no-floating-promises
